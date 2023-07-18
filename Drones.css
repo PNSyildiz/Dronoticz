@@ -27,7 +27,7 @@ background-image: url('hero.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: left;
-min-height: 300px;
+height: 800px;
 }
 
 .header .nav {
@@ -70,65 +70,72 @@ height: Hug (593px);
  left: 120px;
 gap: 144px;
 }
-.articles h3{
-  width: 277px;
+/*.articles h3{
+  width: 77px;
   height: 39px;
   font-size:50px;  
   margin-top: 100px;
   margin-bottom: 15px;
-}
+}*/
+
  #rectangle1 {
 border: solid #060606;
-width: 200px;
+width: 340px;
 height:0%;
-margin: 150px;
+margin-left:500px;
+margin-right: 150px;
+margin-bottom: 150px;
 background-color:#060606;
 }
 
 .articles h3{
   display: center;
- font-size: clamp(3rem, 1rem+1vw, 5rem);
+ font-size: 40px;
 }
 
 .articles img{
   width: 200px;
   height:auto;
-  padding:0px;
 }
  
-@media(max-width:600px){
+@media(max-width:700px){
 .articles h3{ 
-  font-size: clamp(3rem, 1rem+1vw, 5rem);
+    font-size:smaller;
 align-items: center;
 }
-
-  #rectangle{
+ #rectangle1{
   width: 80px;
-  height:1px;
+  margin-left:50px;
+  height:0%;
+  display: center;
+ }
 }
 
 .card {
 align-items: center;
   background-color: transparent;
   height: 300px;
-  display : flex;
+  display:flex;
   flex-direction: column;
   margin-bottom: 20px;
   }
 .card h1{
-font-size : 20px;
+font-size: 90px;
+}
+.card p{
+  font-size: 30px;
 }
 
 @media(max-width:725px){
 .card h1{
   width: 324px;
 height: 39px;
-font-size : 48px;
+font-size: 48px;
 position: relative;
 }
- .rectangle1{
-font-size : 10px;
-align-items: center;
+#rectangle{
+  width: 80px;
+  height:1px;
 }
 }
 
@@ -190,11 +197,13 @@ align-items: center;
       display: flex;
      flex-direction: column;
      align-items: center;
+     margin-bottom: 100px;
     }
     .column{
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-bottom: 50px;
     }
   }
 
@@ -229,6 +238,7 @@ background-color:#FFFFFF;
   padding-right:50px;
   height:auto;
   width:600px;
+ 
  }
 
  @media(max-width:600px){
